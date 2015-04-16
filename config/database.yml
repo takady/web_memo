@@ -25,4 +25,7 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  database: <%= ENV['WEB_MEMO_DB_NAME'] %>
+  username: <%= ENV['WEB_MEMO_DB_USER'] %>
+  password: <%= ENV['WEB_MEMO_DB_PASS'] %>
+  host: <%= ENV['WEB_MEMO_DB_HOST'] %>
