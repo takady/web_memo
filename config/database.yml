@@ -25,7 +25,4 @@ test:
 
 production:
   <<: *default
-  database: <%= ENV['WEB_MEMO_DB_NAME'] %>
-  username: <%= ENV['WEB_MEMO_DB_USER'] %>
-  password: <%= ENV['WEB_MEMO_DB_PASS'] %>
-  host: <%= ENV['WEB_MEMO_DB_HOST'] %>
+  url: <%= ENV['DATABASE_URL'] %>
