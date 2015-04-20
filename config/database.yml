@@ -11,10 +11,9 @@ default: &default
 
 development:
   <<: *default
-  database: <%= ENV['WEB_MEMO_DB_NAME'] %>
-  username: <%= ENV['WEB_MEMO_DB_USER'] %>
-  password: <%= ENV['WEB_MEMO_DB_PASS'] %>
-  host: <%= ENV['WEB_MEMO_DB_HOST'] %>
+  database: web_memo
+  username: takady
+  host: localhost
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
