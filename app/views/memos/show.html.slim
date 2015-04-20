@@ -1,0 +1,8 @@
+p#notice
+  = notice
+h1
+  = @memo.title
+= md2html(@memo.md)
+= link_to 'Edit', edit_memo_path(@memo)
+|  | 
+= link_to 'Back', memos_path
