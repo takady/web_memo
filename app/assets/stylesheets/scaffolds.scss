@@ -67,3 +67,12 @@ div {
     list-style: square;
   }
 }
+
+h1 {
+  font-size: 25px;
+	&#title {
+		font-size: 32px;
+		border-bottom: 1px solid #eee;
+		padding-bottom: 14px;
+	}
+}
