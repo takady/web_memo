@@ -50,3 +50,4 @@ end
 gem 'pg'
 gem 'redcarpet'
 gem 'slim-rails'
+gem 'bootstrap-sass'
