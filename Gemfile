@@ -50,3 +50,6 @@ end
 gem 'pg'
 gem 'redcarpet'
 gem 'slim-rails'
+gem 'therubyracer'
+gem 'less-rails'
+gem 'twitter-bootstrap-rails'
