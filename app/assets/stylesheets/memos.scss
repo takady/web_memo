@@ -1,11 +1,15 @@
 // Place all the styles related to the memos controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1 {
+}
+
 #memo_title {
-		width: 600px;
+		width: 90%;
 }
 
 #memo_md {
-		width: 600px;
+		width: 90%;
 		height: 250px;
 }
