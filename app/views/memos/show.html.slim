@@ -1,8 +1,14 @@
 p#notice
   = notice
-h1#title
-  = @memo.title
-= md2html(@memo.md)
-= link_to 'Edit', edit_memo_path(@memo)
-|  |
-= link_to 'Back', memos_path
+.row
+  .col-md-12
+    h1#title
+      = @memo.title
+.row
+  .col-md-12
+    = md2html(@memo.md)
+.row
+  .col-md-1
+    = link_to 'Edit', edit_memo_path(@memo)
+    |  |
+    = link_to 'Back', memos_path
