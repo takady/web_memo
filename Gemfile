@@ -48,6 +48,6 @@ group :development, :test do
 end
 
 gem 'pg'
-gem 'github-markdown'
+gem 'qiita-markdown'
 gem 'slim-rails'
 gem 'bootstrap-sass'
