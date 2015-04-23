@@ -1,14 +1,9 @@
-require 'redcarpet'
+require 'github/markdown'
 
 module ApplicationHelper
 
   def md2html(md)
-    unless @markdown
-      render = Redcarpet::Render::HTML.new(filter_html: true)
-      @markdown = Redcarpet::Markdown.new(render)
-    end
-
-    @markdown.render(md).html_safe
+    GitHub::Markdown.render_gfm(md).html_safe
   end
 
 end
