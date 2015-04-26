@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   resources :memos
+  root 'memos#index'
+  get 'memos/all' => 'memos#all'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

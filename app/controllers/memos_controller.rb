@@ -7,6 +7,12 @@ class MemosController < ApplicationController
     @memos = Memo.all.where(open_flag: true)
   end
 
+  # GET /memos/all
+  # GET /memos/all.json
+  def all
+    @memos = Memo.all
+  end
+
   # GET /memos/1
   # GET /memos/1.json
   def show
