@@ -11,6 +11,7 @@ class MemosController < ApplicationController
   # GET /memos/all.json
   def all
     @memos = Memo.all
+    render :index
   end
 
   # GET /memos/1
