@@ -4,7 +4,7 @@ class MemosController < ApplicationController
   # GET /memos
   # GET /memos.json
   def index
-    @memos = Memo.all
+    @memos = Memo.all.where(open_flag: true)
   end
 
   # GET /memos/1
@@ -69,6 +69,6 @@ class MemosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def memo_params
-      params.require(:memo).permit(:title, :md)
+      params.require(:memo).permit(:title, :md, :open_flag)
     end
 end
