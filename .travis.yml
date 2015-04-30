@@ -3,6 +3,9 @@ language: ruby
 rvm:
   - 2.2.2
 
+env:
+  - WEB_MEMO_USER=travis WEB_MEMO_PASS=travis
+
 bundler_args: --without development --deployment
 
 cache: bundler
