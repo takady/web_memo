@@ -54,7 +54,8 @@ RSpec.describe MemosController, type: :controller do
 
   describe "GET #new" do
     it "assigns a new memo as @memo" do
-      get :new, {}, valid_session
+      memo = Memo.create! valid_attributes
+      get :new, {:id => memo.to_param}, valid_session
       expect(assigns(:memo)).to be_a_new(Memo)
     end
   end
