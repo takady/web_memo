@@ -1,0 +1,19 @@
+default: &default
+  adapter: postgresql
+  pool: 5
+  timeout: 5000
+
+development:
+  <<: *default
+  database: web_memo
+  username: takady
+  host: localhost
+
+test:
+  <<: *default
+  database: web_memo_test
+  username: postgres
+
+production:
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
