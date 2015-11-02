@@ -4,7 +4,7 @@ class MemosController < ApplicationController
   # GET /memos
   # GET /memos.json
   def index
-    @memos = Memo.all.where(open_flag: true)
+    @memos = Memo.where(open_flag: true).order(:title)
   end
 
   # GET /memos/all
